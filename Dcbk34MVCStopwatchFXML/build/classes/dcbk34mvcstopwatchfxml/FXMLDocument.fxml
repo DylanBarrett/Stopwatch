@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="523.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dcbk34mvcstopwatchfxml.FXMLDocumentController">
+    <children>
+        <Label fx:id="title" alignment="CENTER" layoutX="153.0" layoutY="40.0" minHeight="16" minWidth="69" prefHeight="34.0" prefWidth="240.0" text="MVC Stopwatch">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+        <Button fx:id="start" layoutX="126" layoutY="90" onAction="#startButton" prefHeight="43.0" prefWidth="73.0" text="Start" />
+      <Button fx:id="record" layoutX="339.0" layoutY="90.0" mnemonicParsing="false" onAction="#recordButton" prefHeight="43.0" prefWidth="73.0" text="Record" />
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="169.0" layoutY="131.0">
+         <image>
+            <Image url="@clockface.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dial" fitHeight="200.0" fitWidth="200.0" layoutX="169.0" layoutY="131.0">
+         <image>
+            <Image url="@hand.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="display" alignment="CENTER" layoutX="176.0" layoutY="331.0" prefHeight="49.0" prefWidth="194.0" text="--:--:--:--">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="record1" layoutX="167.0" layoutY="380.0" prefHeight="34.0" prefWidth="240.0" text="Record 1: --:--:--:--">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="record2" layoutX="167.0" layoutY="414.0" prefHeight="43.0" prefWidth="249.0" text="Record 2: --:--:--:--">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="record3" layoutX="169.0" layoutY="457.0" prefHeight="36.0" prefWidth="265.0" text="Record 3: --:--:--:--">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
